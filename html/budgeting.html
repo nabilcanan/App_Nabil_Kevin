@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Budgeting</title>
     <link rel="stylesheet" href="budget.css">
 </head>
+
 <body>
+
     <a href="index.html" id="returnHome">Return to Home</a>
     <h1 id="title">Budgeting</h1>
-    <label for="factor">Budget Factor:</label>
+    <label for="factor">Add Ins For Budgeting:</label>
     <input type="text" id="factor" placeholder="e.g. Rent">
     <label for="amount">Amount:</label>
-    <input type="number" id="amount" placeholder="e.g. 1000">
+    <input type="number" id="amount" placeholder="e.g. 1000 or however much">
     <button id="addFactorButton">Add Factor</button>
-    <table id="budgetTable">
-        <tr>
-            <th>Factor</th>
-            <th>Amount ($)</th>
-        </tr>
-    </table>
+
+        <table id="budgetTable">
+            <tr>
+                <th>Factor</th>
+                <th>Amount ($)</th>
+            </tr>
+        </table>
+
     <div id="total">Total: $0</div>
+
     <script src="../javascript/budgeting.js"></script>
 </body>
 </html>
