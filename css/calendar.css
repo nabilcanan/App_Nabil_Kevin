@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#container {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#month {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#calendar {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#calendar th,
+#calendar td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#calendar th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#taskModal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    width: 40%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#newTask {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    box-sizing: border-box;
+}

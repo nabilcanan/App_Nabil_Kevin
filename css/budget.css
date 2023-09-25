@@ -1,0 +1,32 @@
+#budgetTable, #total {
+    margin-top: 20px;
+    text-align: left;
+    width: 50%;
+}
+
+#budgetTable {
+    border-collapse: collapse;
+}
+
+#budgetTable th, #budgetTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#budgetTable th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#returnHome {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    text-decoration: none;
+    font-size: 16px; /* Adjust as needed */
+    background-color: #4CAF50; /* Adjust as needed */
+    color: white; /* Adjust as needed */
+    padding: 10px 20px; /* Adjust as needed */
+    border-radius: 5px; /* Optional: for rounded corners */
+    cursor: pointer;
+}

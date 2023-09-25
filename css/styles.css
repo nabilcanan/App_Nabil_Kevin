@@ -1,0 +1,34 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding-top: 20px; /* Adjust as needed */
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+}
+
+
+title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: 'Arial', serif; 
+    font-size: 55px; /* Font sizes */
+}
+
+
+#budgetingButton, #calendarButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 200px; /* Adjust as needed */
+}
