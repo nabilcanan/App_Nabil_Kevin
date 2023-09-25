@@ -2,15 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Kevin & Nabil's App</title>
-    <link rel="stylesheet" href="../css/styles.css"> <!-- Move up one directory, then access css folder -->
+    <title>Front Page</title>
+    <link rel="stylesheet" href="../css/frontpage.css">
 </head>
 <body>
-    <h1>Conquer</h1>
-    <!-- This is your navigation link to the Budgeting page -->
-    <a href="calendar.html" id="calendarButton">Open Calendar</a>
-    <a href="budgeting.html" id="budgetingButton">Let's Budget!</a>
-     
-    <script src="../javascript/mainpage.js"></script>
+    <h1>Conquer</h1> <!-- We Can Change this name later dw -->
+
+    <div id="gifContainer"><!-- This is where I am keeping the gifs -->
+        <img src="../GIF/1oLe.gif" alt="GIF 1" class="gif">
+        <img src="../GIF/7Knv.gif" alt="GIF 2" class="gif">
+        <img src="../GIF/fxSu.gif" alt="GIF 3" class="gif">
+    </div>
+    
+    <div class="button-container">
+        <a href="signup.html" class="button" id="signupButton">Sign Up</a>
+        <a href="login.html" class="button" id="loginButton">Login</a>
+        <a href="mainpage.html" class="button" id="mainpageButton">Mainpage Button For Us</a>
+    </div>
+
+    <script src="../javascript/frontpage.js"></script>
 </body>
 </html>

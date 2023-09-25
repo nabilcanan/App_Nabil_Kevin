@@ -21,13 +21,13 @@ h1 {
 
 
 #budgetingButton, #calendarButton {
-    background-color: #4CAF50;
+    background-color: #697069;
     color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 25px;
+    font-size: px;
     margin: 4px 2px;
     cursor: pointer;
     width: 200px; /* Adjust as needed */
