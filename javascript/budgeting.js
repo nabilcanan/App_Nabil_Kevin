@@ -1,27 +1,29 @@
-let totalAmount = 0;
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize total to 0
+    let total = 0;
 
-function addFactor() {
-    const factor = document.getElementById('factor').value;
-    const amount = parseFloat(document.getElementById('amount').value);
-    
-    if(!factor || isNaN(amount)) {
-        alert('Please enter valid factor and amount');
-        return;
-    }
+    document.getElementById('addFactorButton').addEventListener('click', function() {
+        const factor = document.getElementById('factor').value;
+        const amount = document.getElementById('amount').value;
 
-    const table = document.getElementById('budgetTable');
-    const newRow = table.insertRow(-1);
-    const cell1 = newRow.insertCell(0);
-    const cell2 = newRow.insertCell(1);
-    
-    cell1.textContent = factor;
-    cell2.textContent = '$' + amount.toFixed(2);
+        if (factor && !isNaN(amount) && Number(amount) >= 0) {
+            const table = document.getElementById('budgetTable');
+            const newRow = table.insertRow(-1);
+            const cell1 = newRow.insertCell(0);
+            const cell2 = newRow.insertCell(1);
 
-    // Update the total amount
-    totalAmount += amount;
-    document.getElementById('total').textContent = 'Total: $' + totalAmount.toFixed(2);
+            cell1.textContent = factor;
+            cell2.textContent = `$${Number(amount).toFixed(2)}`;
 
-    // Clear the input fields
-    document.getElementById('factor').value = '';
-    document.getElementById('amount').value = '';
-}
+            // Update total
+            total += Number(amount);
+            document.getElementById('total').textContent = `Total: $${total.toFixed(2)}`;
+
+            // Clear the inputs
+            document.getElementById('factor').value = '';
+            document.getElementById('amount').value = '';
+        } else {
+            alert('Please enter a valid factor and amount.');
+        }
+    });
+});

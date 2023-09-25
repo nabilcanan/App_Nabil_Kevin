@@ -11,6 +11,7 @@ body {
 
 h1 {
     font-size: 3em;
+    font-family: 'Courier New', monospace;
     margin-top: 20px; /* Adjust the top margin of the title */
     width: 100%;
     text-align: center;
